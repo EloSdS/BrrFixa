@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nome Da Marca/Empresa </title>
+    <style>
+        :root {
+    --cor-principal: #000000;
+    --cor-secundaria: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal)
+}
+
+h1 {
+    color: var(--cor-secundaria)
+}
+
+.barra-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    padding: 15px 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1)
+}
+
+.marca {
+    color: #ffffff
+}
+.marca h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.marca p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.barra-topo ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.barra-topo li {
+    margin-left: 20px;
+}
+
+.barra-topo li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.barra-topo li a:hover {
+    opacity: 0.8;
+}
+
+.barra-topo li a.btn-contato {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.barra-topo li a.btn-contato:hover {
+    background-color: var(--cor-principal);
+    opacity: 1;
+}
+
+/* 3. Seção de Boas-Vindas (Banner Centralizado) */
+.aviso {
+    margin-top: 100px; /* Empurra para baixo da barra fixa */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    background-color: var(--cor-principal); /* Tom pastel/marrom claro do print */
+    border: 1px solid var(--cor-secundaria);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.aviso h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.mensagem {
+    font-size: 14px;
+    color: var(--cor-secundaria);
+}
+
+#fechar-aviso {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ff1744;
+    color: #ffffff;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Blocos de Conteúdo Escuros */
+.bloco-conteudo {
+    flex: 1;
+    background-color: var(--cor-principal); 
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    min-height: 400px;
+}
+
+.bloco-conteudo h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+}
+
+.bloco-conteudo ul {
+    list-style: none;
+}
+
+.bloco-conteudo li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    opacity: 0.85;
+}
+
+.bloco-conteudo li::before {
+    content: "•";
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+    </style>
+</head>
+<body>
+    <nav class="barra-topo">
+        <div class="marca">
+            <h1>Nome empresa ou marca</h1>  
+            <p>Algo | AAAA | Coisa</p>
+        </div>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#" class="btn-contato">Entrar em contato</a></li>
+        </ul>
+    </nav>
+    <div class="aviso">
+    <h1>Bem-Vindo(a)!</h1>
+    <p class="mensagem">Frete grátis para produtos acima de R$150 </p>
+    <span id="fechar-aviso">X</span>
+    </div>
+    <main>
+    <section class="bloco-conteudo">
+        <h2>Alguma coisa</h2>
+        <ul>
+            <li>dnaiiduhdeujdomsxrufhoewfemdkmskdwidjoiedkem fjsnfwioe</li>
+            <li>Finge que tem uma coisa importante escrita aqui e ignore blzz.</li>                                     
+            <li>Ignore seja la o que está escrito nessa parte, entendeu? aaaa.</li>
+            <li>Alguma coisa está escrita aqui, não preste atenção nisso okk.</li>
+        </ul>
+    </section>
+    <section class="bloco-conteudo">
+        <h2>Algum tópico</h2>
+        <ul>
+            <li>uauewc9rpewoirmerk rnoiceurximojl cjnoceirxmedxnfjrhtni sklmm</li>
+            <li>siuwhosiawd lksal,zx,c ,mxcnkjdnfiepo spdoqwrieripjfijdfçkd cmcmpe.</li>
+            <li>sjdbeauhdoads d woduheodoadks dneuodhehoamskdsmc  dnidaoijdfpef</li>
+            <li>uerhwohroiejdlmkfmd nfeowifoeiflkemf fnewohrfuofhoeifiemfkm fnwiei</li>
+        </ul>
+    </section>
+    </main>
+</body>
+</html>
