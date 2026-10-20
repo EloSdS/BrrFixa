@@ -213,3 +213,28 @@ main {
     </main>
 </body>
 </html>
+
+<!-- Cálculo do margin-top do <main>:
+O valor é a soma da altura da barra de navegação, que foi calculada pelo tamanho do texto 
++ os padding internos de 15px em cima e embaixo, que fica entre 60px e 70px + um espaço a 
+mais para ficar mais bonito, entre 30px e 40px, o resultado é entre 100px e 110px.
+-->
+
+<!-- Resposta da primeira pergunta:
+R: Porque a barra de navegação com position: fixed fica "flutuando" em cima do layout e 
+não ocupa um espaço "fisíco", sem o reajuste as coisas dentro da tag <main> ficaria em 
+baixo da barra de navegção.
+-->
+
+<!-- Resposta da segunda pergunta:
+R: O fixed fica na posição de acordo com a tela enquanto o absolute fica na posição de 
+acordo com o "pai", quando usa o fixed quando rolar a página o conteúdo continua fixo 
+indo junto com a tela, enquanto o absolute deixa ele na mesma posição, ou seja, quando 
+rolar a tela para baixo ela fica para trás.
+-->
+
+<!-- Resposta da terceira pergunta: 
+R: Se tirar os dois a barra de navegação vai passar da tela, então vai ficar uma parte 
+de rolar para a lateral. A fórmula é Largura Total = width + padding-left + padding-right + border, 
+sem o border-box, os 40px de padding são somados fora dos 100% da largura.
+-->
